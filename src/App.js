@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+// import {universe} from './facts';
+
+const fact = <h3>Hello</h3>
+const wrapper_body = <div className="fact_body"></div>
+// const fact_img;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg">
+      <h1>Astronomy Funfacts</h1>
+      <div className="fact_main">
+        {/* {fact_img} */}
+        {wrapper_body}
+        <div className="fact_text">
+            <p>{fact}</p>
+          </div>
+      </div>
     </div>
   );
 }
